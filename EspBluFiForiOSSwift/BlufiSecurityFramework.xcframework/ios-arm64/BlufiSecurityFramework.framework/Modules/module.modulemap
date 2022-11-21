@@ -1,0 +1,6 @@
+framework module BlufiSecurityFramework {
+  umbrella header "BlufiSecurityFramework.h"
+
+  export *
+  module * { export * }
+}

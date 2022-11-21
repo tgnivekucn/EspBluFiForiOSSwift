@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FD1BFE3292B08B800CA4DCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1BFE2292B08B800CA4DCA /* AppDelegate.swift */; };
+		2FD1BFE5292B08B800CA4DCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1BFE4292B08B800CA4DCA /* SceneDelegate.swift */; };
+		2FD1BFE7292B08B800CA4DCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1BFE6292B08B800CA4DCA /* ViewController.swift */; };
+		2FD1BFEA292B08B800CA4DCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1BFE8292B08B800CA4DCA /* Main.storyboard */; };
+		2FD1BFEC292B08B800CA4DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1BFEB292B08B800CA4DCA /* Assets.xcassets */; };
+		2FD1BFEF292B08B800CA4DCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD1BFED292B08B800CA4DCA /* LaunchScreen.storyboard */; };
+		2FD1C003292B091900CA4DCA /* BlufiNotifyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1BFF8292B091900CA4DCA /* BlufiNotifyData.swift */; };
+		2FD1C004292B091900CA4DCA /* BlufiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1BFF9292B091900CA4DCA /* BlufiClient.swift */; };
+		2FD1C005292B091900CA4DCA /* BlufiConfigureParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1BFFA292B091900CA4DCA /* BlufiConfigureParams.swift */; };
+		2FD1C006292B091900CA4DCA /* BlufiClient+CBPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1BFFB292B091900CA4DCA /* BlufiClient+CBPeripheralDelegate.swift */; };
+		2FD1C007292B091900CA4DCA /* BlufiCient+CentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1BFFC292B091900CA4DCA /* BlufiCient+CentralManagerDelegate.swift */; };
+		2FD1C008292B091900CA4DCA /* BlufiScanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1BFFD292B091900CA4DCA /* BlufiScanResponse.swift */; };
+		2FD1C009292B091900CA4DCA /* BlufiStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1BFFE292B091900CA4DCA /* BlufiStatusResponse.swift */; };
+		2FD1C00A292B091900CA4DCA /* BlufiVersionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1BFFF292B091900CA4DCA /* BlufiVersionResponse.swift */; };
+		2FD1C00B292B091900CA4DCA /* EspBlockingQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1C000292B091900CA4DCA /* EspBlockingQueue.swift */; };
+		2FD1C00C292B091900CA4DCA /* BlufiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1C001292B091900CA4DCA /* BlufiConstants.swift */; };
+		2FD1C00D292B091900CA4DCA /* BlufiFrameCtrlData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1C002292B091900CA4DCA /* BlufiFrameCtrlData.swift */; };
+		2FD1C010292B09C400CA4DCA /* OpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD1C00E292B09BE00CA4DCA /* OpenSSL.framework */; };
+		2FD1C011292B09C400CA4DCA /* OpenSSL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD1C00E292B09BE00CA4DCA /* OpenSSL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FD1C015292B09E100CA4DCA /* BlufiSecurityFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD1C013292B09D700CA4DCA /* BlufiSecurityFramework.xcframework */; };
+		2FD1C016292B09E100CA4DCA /* BlufiSecurityFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD1C013292B09D700CA4DCA /* BlufiSecurityFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FD1C018292B0A7900CA4DCA /* BlufiDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD1C017292B0A7900CA4DCA /* BlufiDevice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2FD1C012292B09C400CA4DCA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2FD1C011292B09C400CA4DCA /* OpenSSL.framework in Embed Frameworks */,
+				2FD1C016292B09E100CA4DCA /* BlufiSecurityFramework.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2FD1BFDF292B08B800CA4DCA /* EspBluFiForiOSSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EspBluFiForiOSSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD1BFE2292B08B800CA4DCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FD1BFE4292B08B800CA4DCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2FD1BFE6292B08B800CA4DCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FD1BFE9292B08B800CA4DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FD1BFEB292B08B800CA4DCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FD1BFEE292B08B800CA4DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FD1BFF0292B08B800CA4DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FD1BFF7292B091900CA4DCA /* BlufiSwiftFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlufiSwiftFramework.h; sourceTree = "<group>"; };
+		2FD1BFF8292B091900CA4DCA /* BlufiNotifyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlufiNotifyData.swift; sourceTree = "<group>"; };
+		2FD1BFF9292B091900CA4DCA /* BlufiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlufiClient.swift; sourceTree = "<group>"; };
+		2FD1BFFA292B091900CA4DCA /* BlufiConfigureParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlufiConfigureParams.swift; sourceTree = "<group>"; };
+		2FD1BFFB292B091900CA4DCA /* BlufiClient+CBPeripheralDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BlufiClient+CBPeripheralDelegate.swift"; sourceTree = "<group>"; };
+		2FD1BFFC292B091900CA4DCA /* BlufiCient+CentralManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BlufiCient+CentralManagerDelegate.swift"; sourceTree = "<group>"; };
+		2FD1BFFD292B091900CA4DCA /* BlufiScanResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlufiScanResponse.swift; sourceTree = "<group>"; };
+		2FD1BFFE292B091900CA4DCA /* BlufiStatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlufiStatusResponse.swift; sourceTree = "<group>"; };
+		2FD1BFFF292B091900CA4DCA /* BlufiVersionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlufiVersionResponse.swift; sourceTree = "<group>"; };
+		2FD1C000292B091900CA4DCA /* EspBlockingQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EspBlockingQueue.swift; sourceTree = "<group>"; };
+		2FD1C001292B091900CA4DCA /* BlufiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlufiConstants.swift; sourceTree = "<group>"; };
+		2FD1C002292B091900CA4DCA /* BlufiFrameCtrlData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlufiFrameCtrlData.swift; sourceTree = "<group>"; };
+		2FD1C00E292B09BE00CA4DCA /* OpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenSSL.framework; sourceTree = "<group>"; };
+		2FD1C013292B09D700CA4DCA /* BlufiSecurityFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = BlufiSecurityFramework.xcframework; sourceTree = "<group>"; };
+		2FD1C017292B0A7900CA4DCA /* BlufiDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlufiDevice.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FD1BFDC292B08B800CA4DCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD1C010292B09C400CA4DCA /* OpenSSL.framework in Frameworks */,
+				2FD1C015292B09E100CA4DCA /* BlufiSecurityFramework.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FD1BFD6292B08B800CA4DCA = {
+			isa = PBXGroup;
+			children = (
+				2FD1BFE1292B08B800CA4DCA /* EspBluFiForiOSSwift */,
+				2FD1BFE0292B08B800CA4DCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FD1BFE0292B08B800CA4DCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1BFDF292B08B800CA4DCA /* EspBluFiForiOSSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FD1BFE1292B08B800CA4DCA /* EspBluFiForiOSSwift */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1BFF6292B090D00CA4DCA /* BlufiLibrary */,
+				2FD1BFE2292B08B800CA4DCA /* AppDelegate.swift */,
+				2FD1BFE4292B08B800CA4DCA /* SceneDelegate.swift */,
+				2FD1BFE6292B08B800CA4DCA /* ViewController.swift */,
+				2FD1C017292B0A7900CA4DCA /* BlufiDevice.swift */,
+				2FD1BFE8292B08B800CA4DCA /* Main.storyboard */,
+				2FD1BFEB292B08B800CA4DCA /* Assets.xcassets */,
+				2FD1BFED292B08B800CA4DCA /* LaunchScreen.storyboard */,
+				2FD1BFF0292B08B800CA4DCA /* Info.plist */,
+				2FD1C00E292B09BE00CA4DCA /* OpenSSL.framework */,
+				2FD1C013292B09D700CA4DCA /* BlufiSecurityFramework.xcframework */,
+			);
+			path = EspBluFiForiOSSwift;
+			sourceTree = "<group>";
+		};
+		2FD1BFF6292B090D00CA4DCA /* BlufiLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				2FD1BFFC292B091900CA4DCA /* BlufiCient+CentralManagerDelegate.swift */,
+				2FD1BFF9292B091900CA4DCA /* BlufiClient.swift */,
+				2FD1BFFB292B091900CA4DCA /* BlufiClient+CBPeripheralDelegate.swift */,
+				2FD1BFFA292B091900CA4DCA /* BlufiConfigureParams.swift */,
+				2FD1C001292B091900CA4DCA /* BlufiConstants.swift */,
+				2FD1C002292B091900CA4DCA /* BlufiFrameCtrlData.swift */,
+				2FD1BFF8292B091900CA4DCA /* BlufiNotifyData.swift */,
+				2FD1BFFD292B091900CA4DCA /* BlufiScanResponse.swift */,
+				2FD1BFFE292B091900CA4DCA /* BlufiStatusResponse.swift */,
+				2FD1BFF7292B091900CA4DCA /* BlufiSwiftFramework.h */,
+				2FD1BFFF292B091900CA4DCA /* BlufiVersionResponse.swift */,
+				2FD1C000292B091900CA4DCA /* EspBlockingQueue.swift */,
+			);
+			path = BlufiLibrary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FD1BFDE292B08B800CA4DCA /* EspBluFiForiOSSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FD1BFF3292B08B800CA4DCA /* Build configuration list for PBXNativeTarget "EspBluFiForiOSSwift" */;
+			buildPhases = (
+				2FD1BFDB292B08B800CA4DCA /* Sources */,
+				2FD1BFDC292B08B800CA4DCA /* Frameworks */,
+				2FD1BFDD292B08B800CA4DCA /* Resources */,
+				2FD1C012292B09C400CA4DCA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EspBluFiForiOSSwift;
+			productName = EspBluFiForiOSSwift;
+			productReference = 2FD1BFDF292B08B800CA4DCA /* EspBluFiForiOSSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FD1BFD7292B08B800CA4DCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					2FD1BFDE292B08B800CA4DCA = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 2FD1BFDA292B08B800CA4DCA /* Build configuration list for PBXProject "EspBluFiForiOSSwift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FD1BFD6292B08B800CA4DCA;
+			productRefGroup = 2FD1BFE0292B08B800CA4DCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FD1BFDE292B08B800CA4DCA /* EspBluFiForiOSSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FD1BFDD292B08B800CA4DCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD1BFEF292B08B800CA4DCA /* LaunchScreen.storyboard in Resources */,
+				2FD1BFEC292B08B800CA4DCA /* Assets.xcassets in Resources */,
+				2FD1BFEA292B08B800CA4DCA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FD1BFDB292B08B800CA4DCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD1C004292B091900CA4DCA /* BlufiClient.swift in Sources */,
+				2FD1C007292B091900CA4DCA /* BlufiCient+CentralManagerDelegate.swift in Sources */,
+				2FD1C008292B091900CA4DCA /* BlufiScanResponse.swift in Sources */,
+				2FD1BFE7292B08B800CA4DCA /* ViewController.swift in Sources */,
+				2FD1C003292B091900CA4DCA /* BlufiNotifyData.swift in Sources */,
+				2FD1C00D292B091900CA4DCA /* BlufiFrameCtrlData.swift in Sources */,
+				2FD1C009292B091900CA4DCA /* BlufiStatusResponse.swift in Sources */,
+				2FD1C005292B091900CA4DCA /* BlufiConfigureParams.swift in Sources */,
+				2FD1C018292B0A7900CA4DCA /* BlufiDevice.swift in Sources */,
+				2FD1BFE3292B08B800CA4DCA /* AppDelegate.swift in Sources */,
+				2FD1C006292B091900CA4DCA /* BlufiClient+CBPeripheralDelegate.swift in Sources */,
+				2FD1C00A292B091900CA4DCA /* BlufiVersionResponse.swift in Sources */,
+				2FD1BFE5292B08B800CA4DCA /* SceneDelegate.swift in Sources */,
+				2FD1C00B292B091900CA4DCA /* EspBlockingQueue.swift in Sources */,
+				2FD1C00C292B091900CA4DCA /* BlufiConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FD1BFE8292B08B800CA4DCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD1BFE9292B08B800CA4DCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FD1BFED292B08B800CA4DCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD1BFEE292B08B800CA4DCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FD1BFF1292B08B800CA4DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2FD1BFF2292B08B800CA4DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FD1BFF4292B08B800CA4DCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MURH4SN58F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EspBluFiForiOSSwift",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EspBluFiForiOSSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.EspBluFiForiOSSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FD1BFF5292B08B800CA4DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MURH4SN58F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EspBluFiForiOSSwift",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EspBluFiForiOSSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.EspBluFiForiOSSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FD1BFDA292B08B800CA4DCA /* Build configuration list for PBXProject "EspBluFiForiOSSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD1BFF1292B08B800CA4DCA /* Debug */,
+				2FD1BFF2292B08B800CA4DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FD1BFF3292B08B800CA4DCA /* Build configuration list for PBXNativeTarget "EspBluFiForiOSSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD1BFF4292B08B800CA4DCA /* Debug */,
+				2FD1BFF5292B08B800CA4DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FD1BFD7292B08B800CA4DCA /* Project object */;
+}
