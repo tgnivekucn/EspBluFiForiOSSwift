@@ -8,8 +8,9 @@ Pass your bluetooth device UUID and do what you what by calling the api just lik
 BlufiSecurityFramework is BlufiDH.h/BlufiDH.m & BlufiSecurity.h/BlufiSecurity.m
 
 ## License
-
-This project is distributed under the terms and conditions of the Apache License, Version 2.0 
+### ESPRSSIF MIT License
+- See [License](LICENSE.txt)
+https://github.com/EspressifApp/EspBlufiForiOS/blob/master/LICENSE.txt
 
 ## Ref:
 https://github.com/EspressifApp/EspBlufiForiOS        
