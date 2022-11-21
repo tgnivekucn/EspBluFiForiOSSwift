@@ -10,6 +10,7 @@ BlufiSecurityFramework is BlufiDH.h/BlufiDH.m & BlufiSecurity.h/BlufiSecurity.m
 ## License
 ### ESPRSSIF MIT License
 - See [License](LICENSE.txt)
+- License original url:
 https://github.com/EspressifApp/EspBlufiForiOS/blob/master/LICENSE.txt
 
 ## Ref:
