@@ -2,7 +2,7 @@
 ## BluFiLibrary in Swift of EspressifApp/EspBlufiForiOS
 
 ## Usage:
-Pass your bluetooth device UUID and do what you what by calling the api just like EspressifApp/EspBlufiForiOS app
+Pass your bluetooth device UUID and do what you want by calling the api just like EspressifApp/EspBlufiForiOS app
 
 ## Note:
 BlufiSecurityFramework is BlufiDH.h/BlufiDH.m & BlufiSecurity.h/BlufiSecurity.m
